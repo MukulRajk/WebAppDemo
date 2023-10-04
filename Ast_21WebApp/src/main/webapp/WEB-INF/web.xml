@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Ast_21WebApp</display-name>
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <!-- welcome  -->
+ 
+  
+    <servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>in.mindcraft.WelcomeServlet</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/wel</url-pattern>
+		
+	</servlet-mapping>
+	
+	
+	<!-- wish-->
+	<servlet>
+		<servlet-name>xyz</servlet-name>
+		<servlet-class>in.mindcraft.WishServlet</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/wish</url-pattern>
+		
+	</servlet-mapping>
+</web-app>

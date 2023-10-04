@@ -1,0 +1,25 @@
+package in.mindcraft;
+
+import java.util.*;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyController {
+
+	private List<Product> list=new ArrayList<>();
+	
+	public MyController() {
+		list.add(new Product(101,"marker",50));
+		list.add(new Product(102,"water bottle",70));
+		list.add(new Product(103,"bag",250));
+	}
+	
+	@RequestMapping("/products")
+	public List<Product> getProducts(){
+		return list;
+		
+		
+	}
+	
+}
